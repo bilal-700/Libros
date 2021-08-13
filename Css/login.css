@@ -1,0 +1,123 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Fresca';
+}
+
+.bgimage {
+    width: 100%;
+    height: 100%;
+    background-image: url("https://images.pexels.com/photos/1018136/pexels-photo-1018136.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=1500");
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+.box {
+    width: 350px;
+    height: 450px;
+    background-color: white;
+    position: relative;
+    margin: 7% auto;
+    padding: 5px;
+    background: linear-gradient(to right, white, aliceblue);
+}
+
+.message {
+    color: #FF0000;
+    height: 20px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+}
+
+.mainbtn {
+    width: 160px;
+    margin: 33px auto;
+    box-shadow: 0 0 9px 5px #00bff3;
+    height: 40px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.btn {
+    outline: none;
+    position: relative;
+    border: none;
+    padding: 10px;
+    background-color: transparent;
+    width: 160px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.animate {
+    animation: animatezoom 0.6s
+}
+
+@keyframes animatezoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+.mainform {
+    width: 270px;
+    transition: .5s;
+    font-size: 20px;
+}
+
+i {
+    color: #09728f;
+    padding: 2px;
+    cursor: pointer;
+    float: right;
+    font-size: 18px;
+}
+
+.form1 {
+    font-size: 20px;
+    position: relative;
+    width: 270px;
+    transition: .5s;
+}
+
+.inputfield {
+    font-size: 13.5px;
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    border-bottom: 2px solid #00bff3;
+    outline: none;
+    background: transparent;
+    margin: 5px 0;
+}
+
+.submit {
+    width: 130px;
+    padding: 10px 30px;
+    cursor: pointer;
+    margin: auto;
+    background: linear-gradient(to right, #00bff3, #0d81a1);
+    border: 0;
+    border-radius: 30px;
+    outline: transparent;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.label {
+    font-size: 17px;
+}
+
+#Login {
+    left: 50px;
+}
+
+#Submit {
+    left: 450px;
+}

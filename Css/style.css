@@ -1,0 +1,856 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 10px;
+}
+
+.center {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#mySidenav a {
+    position: absolute;
+    left: -85px;
+    transition: 0.5s;
+    padding: 10px;
+    width: 130px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    font-family: 'Londrina Solid';
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+#mySidenav a:hover {
+    left: 0;
+    z-index: 1;
+}
+
+#home {
+    top: 100px;
+    background-color: #0162c8;
+}
+
+#about {
+    top: 160px;
+    background-color: #0162c8;
+}
+.div1 .ul1 {
+    background-color: #00bff3;
+    font-family: 'Londrina Solid';
+    list-style-type: none;
+    float: right;
+    position: relative;
+    width: 30%;
+    height: 85px;
+}
+
+.div1 .ul1 .li1 {
+    display: inline-block;
+}
+
+.div1 .ul1 .li1 a {
+    color: white;
+    text-decoration: none;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    opacity: 0.9;
+}
+
+.div1 {
+    z-index: 1;
+    background-color: #00bff3;
+    width: 100%;
+    height: 85px
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+    color: white;
+    border-bottom: none;
+}
+
+#check {
+    display: none;
+}
+
+#hamburger {
+    display: none;
+    font-size: 35px;
+    position: relative;
+    float: right;
+    right: 20px;
+    color: #09728f;
+    top: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.span1 {
+    float: right;
+    position: relative;
+    font-size: 20px;
+    padding: 30px;
+}
+
+.span0 {
+    width: 30px;
+    height: 30px;
+    border: 2px solid #0162c8;
+    border-radius: 20px;
+    padding: 5px
+}
+
+.div0 {
+    float: left;
+    padding: 20px 20px 20px 100px;
+    font-family: 'Londrina Solid';
+    font-weight: bold;
+    color: white;
+}
+
+p {
+    font-size: 30px;
+    color: white;
+}
+
+.card {
+    position: relative;
+    width: 300px;
+    height: 350px;
+    background: #fff;
+    margin: 80px 30px 30px 100px;
+    border-radius: 4px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    float: left;
+    font-weight: bold;
+    font-family: 'Londrina Solid';
+    letter-spacing: 1px;
+}
+
+.card .imgBx {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    bottom: 10px;
+    right: 10px;
+    background: #0162c8;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.card:hover .imgBx {
+    bottom: 150px;
+}
+
+.card .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+}
+
+.card .details {
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    height: 140px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.card .details h2 {
+    margin: 0;
+    padding: 0 0 5px 0;
+    font-weight: 600;
+    font-size: 20px;
+    color: #2196F3;
+}
+
+.card .details h2 span {
+    font-weight: 500;
+    font-size: 16px;
+    color: #2196F3;
+    font-weight: bold;
+    display: block;
+    margin-top: 5px;
+}
+
+.card .details p button {
+    font-weight: bold;
+    border: none;
+    padding: 12px;
+    color: white;
+    background-color: #0162c8;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    outline: none;
+}
+
+.card .details p button:hover {
+    opacity: 0.7;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 100px;
+    right: 0;
+    z-index: 1;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    background-color: #0162c8;
+    color: white;
+    cursor: pointer;
+    padding: 5px;
+    height: 45px;
+    font-family: 'Londrina Solid';
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    color:#0000;
+}
+
+ul li {
+    cursor: pointer;
+    position: relative;
+    letter-spacing: 2px;
+    font-weight: bolder;
+    font-family: 'Londrina Solid';
+    padding: 12px 8px 12px 40px;
+    list-style-type: none;
+    background: #09728f;
+    color: #000;
+    font-size: 18px;
+    transition: 0.2s;
+    user-select: none;
+    width: 60%;
+}
+
+ul li:nth-child(odd) {
+    background: #00bff3;
+}
+
+ul li:hover {
+    background: #2980b9;
+}
+
+ul li.checked {
+    background: #00bff3;
+    color: #fff;
+    text-decoration: line-through;
+}
+
+ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 16px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+}
+
+.close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12.5px;
+    font-weight: bold;
+    height: 49px;
+}
+
+.close:hover {
+    background-color: #0162c8;
+    color: white;
+}
+
+.header {
+    font-weight: bolder;
+    font-family: 'Londrina Solid';
+    background-color: #0162c8;
+    padding: 30px 40px;
+    color: white;
+    text-align: center;
+    width: 60%;
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.login{
+    display: block;
+    text-align: right;
+    float: right;
+    top: 60px;
+    right:0;
+    background-color: #00bff3;
+    width: 220px;
+    color: black;
+    font-family: 'Londrina Solid';
+    font-weight: bolder;
+    letter-spacing: 1px;
+    font-size: medium;
+}
+
+.header:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+input {
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    width: 70%;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+    font-family: 'Londrina Solid';
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.addBtn {
+    padding: 10px;
+    width: 270px;
+    height: 40px;
+    background: #2980b9;
+    color: black;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.add {
+    font-family: 'Londrina Solid';
+    font-weight: bold;
+}
+
+.qty {
+    outline: none;
+    padding: 3px 6px;
+}
+
+.div2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.addBtn:hover {
+    background-color: #09728f;
+}
+
+#site {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+#masthead {
+    margin-top: 3em;
+    padding: 2em 0 0.5em 0;
+    border-bottom: 1px solid #ddd;
+}
+
+#masthead h1 {
+    margin: 0;
+    font-size: 3.5em;
+    height: 100px;
+    line-height: 2.3;
+    color: #0162c8;
+    font-family: 'Galindo';
+}
+
+.tagline {
+    float: right;
+    color: #00bff3;
+    font-size: 14px;
+    padding-top: 3.5em;
+}
+
+form.add-to-cart div, form.add-to-cart p {
+    text-align: center;
+}
+
+.qty {
+    border: 1px solid #09728f;
+    font: 'Londrina Solid';
+    color: #000;
+    margin-left: 0.4em;
+    margin-bottom: 10px;
+}
+
+.btn1 {
+    background: #09728f;
+    color: black;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border: none;
+    width: 100px;
+    height: 40px;
+    margin: 10px;
+    font-family: 'Londrina Solid';
+    font-weight: bold;
+    font-size: 15px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-40%);
+    cursor: pointer;
+    outline: transparent;
+}
+
+#sub-total, #shipping {
+    font-family: 'Londrina Solid';
+    font-weight: bold;
+    margin: 1em 0;
+    font-size: 20px;
+    text-align: center;
+    color: black;
+}
+
+#shopping-cart {
+    margin: 40px 0;
+}
+
+.shopping-cart {
+    border-spacing: 0;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.shopping-cart th {
+    font-size: 20px;
+    padding: 0.3em;
+    text-align: center;
+    border: 1px solid #09728f;
+    font-family: 'Londrina Solid';
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.shopping-cart td {
+    font-size: 15px;
+    padding: 0.3em;
+    text-align: center;
+    border-bottom: 10px solid #09728f;
+    font-family: 'Londrina Solid';
+}
+
+table {
+    width: 100%;
+    border: 30px solid #09728f;
+}
+
+td {
+    text-align: center;
+    padding: 8px;
+    font-weight: bold;
+    font-family: 'Londrina Solid';
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 15px;
+}
+
+th {
+    text-align: center;
+    padding: 8px;
+    font-family: 'Londrina Solid';
+    font-weight: bold;
+    letter-spacing: 2px;
+    background-color: #0162c8;
+    color: black;
+    font-size: 25px;
+}
+
+caption {
+    font-weight: bold;
+    font-family: 'Chelsea Market';
+    color: #00bff3;
+    font-size: 25px;
+}
+
+#content>h1, #checkout-order-form h2 {
+    font-size: 50px;
+    margin: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Londrina Solid';
+    color: #0162c8;
+}
+
+td label{
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color:#00bff3
+}
+
+.error {
+    font-family: 'Galindo';
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    color: red;
+}
+
+.container {
+    font-family: 'Londrina Solid';
+    width: 90%;
+    padding: 10px;
+    margin-bottom: none;
+}
+
+.container h1 {
+    width: 100%;
+    color: #2196F3;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.container .subcontainer {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.container .subcontainer .column {
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    margin: 30px 0 10px;
+    transition: 0.5s;
+}
+
+.container .subcontainer .inputbox {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    color: #0162c8;
+}
+
+.container .subcontainer .inputbox input, .container .subcontainer .inputbox.textarea textarea {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    font-size: 18px;
+    padding: 0 10px;
+    color: white;
+    z-index: 1;
+}
+
+.container .subcontainer .inputbox .inputtext {
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 40px;
+    padding: 0 10px;
+    transition: 0.5s;
+    display: block;
+    font-size: 18px;
+    pointer-events: none;
+}
+
+.container .subcontainer .inputbox input:focus+.inputtext, .container .subcontainer .inputbox input:valid+.inputtext {
+    top: -35px;
+    left: -10px;
+}
+
+.container .subcontainer .inputbox .inputline {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #2196F3;
+    transition: 0.5s;
+    border-radius: 2px;
+    pointer-events: none;
+}
+
+.container .subcontainer .inputbox input:focus~.inputline, .container .subcontainer .inputbox input:valid~.inputline {
+    height: 100%;
+}
+
+.container .subcontainer .inputbox.textarea {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    padding: 10px 0;
+}
+
+.container .subcontainer .inputbox.textarea textarea {
+    resize: none;
+    height: 100%;
+}
+
+.container .subcontainer .inputbox textarea:focus~.inputline, .container .subcontainer .inputbox textarea:valid~.inputline {
+    height: 100%;
+}
+
+.container .subcontainer .inputbox textarea:focus+.inputtext, .container .subcontainer .inputbox textarea:valid+.inputtext {
+    top: -35px;
+    left: -10px;
+}
+
+#send {
+    border: none;
+    background: #2196F3;
+    outline: none;
+    cursor: pointer;
+    padding: 7px 35px;
+    color: white;
+    border-radius: 2px;
+    font-size: 18px;
+    width: 110px;
+    height: 50px;
+    font-family: 'Londrina Solid';
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.send {
+    border: none;
+    background: #2196F3;
+    outline: none;
+    cursor: pointer;
+    padding: 7px 35px;
+    color: white;
+    border-radius: 2px;
+    font-size: 18px;
+    width: 110px;
+    height: 50px;
+    font-family: 'Londrina Solid';
+}
+
+.container2 {
+    position: relative;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    user-select: none;
+    font-family: 'Chelsea Market';
+    padding: 0 0 0 60px
+}
+
+.container2 input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 30px;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+}
+
+.container2:hover input~.checkmark {
+    background-color: #ccc;
+}
+
+.container2 input:checked~.checkmark {
+    background-color: #2196F3;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.container2 input:checked~.checkmark:after {
+    display: block;
+}
+
+.container2 .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+
+.input1 {
+    border: none;
+    text-align: center;
+    outline: transparent
+}
+
+.order {
+    font-weight: bold;
+    font-family: 'Londrina Solid';
+    letter-spacing: 2px;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: #09728f;
+}
+
+.img1 {
+    width: 20px;
+    height: 20px;
+}
+
+.closebutton {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.bind {
+    color: black;
+    background-color: #2980b9;
+    width: 100%;
+    height: 40px
+}
+
+.maincontainer {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #00bff3;
+    list-style: none;
+}
+
+.nav .li {
+    position: relative;
+    display: block;
+    font-family: 'Londrina Solid';
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.nav .li>a {
+    position: relative;
+    text-decoration: none;
+    display: block;
+    padding: 10px 15px;
+}
+
+.nav .li>a:hover {
+    text-decoration: none;
+    background-color: #0162c8;
+    color: white;
+}
+
+.tab-content>.tab-pane {
+    display: none;
+}
+
+.tab-content>.active {
+    display: block;
+}
+
+.fade {
+    opacity: 0;
+    transition: opacity .15s linear
+}
+
+.fade.in {
+    opacity: 1
+}
+
+span.badge {
+    display: inline-block;
+    min-width: 10px;
+    padding: 3px 7px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #0162c8;
+    border-radius: 10px
+}
+
+#send {
+    border: none;
+    background-color: none;
+    outline: none;
+    cursor: pointer;
+    padding: 7px 35px;
+    color: #00bff3;
+    border-radius: 2px;
+    font-size: 18px;
+    width: 200px;
+    height: 80px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top:20px;
+    margin-bottom: 20px;
+}

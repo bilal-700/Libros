@@ -1,0 +1,162 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 10px;
+}
+
+.div2 {
+    height: 100vh;
+    z-index: 1;
+    top: 0;
+    transition: 1s;
+    padding: 25px;
+    font-size: 30px;
+    position: fixed;
+    left: 0;
+    width: 290px;
+    font-family: 'Londrina Solid';
+    background-color: #2196F3;
+    color: white;
+    text-align: center;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+.div1 {
+    z-index: 1;
+    background-color: #00bff3;
+    top: 0;
+    right: 0;
+    position: relative;
+    display: none;
+    width: 700px
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a {
+    color: white
+}
+
+ul {
+    background-color: #00bff3;
+    font-family: 'Londrina Solid';
+    list-style-type: none;
+    float: right;
+    position: relative;
+    right: 35px;
+    padding: 15px;
+    top: 5px;
+    right: 5px;
+}
+
+li {
+    display: inline-block;
+    font-size: 30px;
+    letter-spacing: 1px;
+    font-weight: 200;
+}
+
+li a {
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+}
+
+li a:hover {
+    color: #09728f;
+    border-bottom: 2px solid #09728f;
+}
+
+img.profilepic {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-top: 300px;
+    cursor: pointer
+}
+
+.info {
+    width: 60%;
+    margin-top: 20px;
+    color: white;
+    background-color: #00bff3;
+    color: #0162c8;
+    font-family: 'Londrina Solid';
+    font-size: 18px;
+    letter-spacing: 1px;
+    left: -52%;
+    transform: translateX(52%);
+    font-size: 27px;
+    padding:10px
+}
+
+.info h1 {
+    text-align: center;
+    color: white;
+}
+
+.login {
+    display: block;
+    text-align: right;
+    background-color: #2196F3;
+    color: black;
+    font-family: 'Londrina Solid';
+    font-weight: bolder;
+    letter-spacing: 1px;
+    font-size: medium;
+    width: 180px
+}
+
+.main {
+    font-family: 'Galindo';
+    font-size: 50px;
+    color: #00bff3;
+    text-align: center;
+    width: 300px;
+    position: relative;
+    left: 63.5%;
+    transform: translateX(-63.5%);
+}
+
+#mydiv {
+    position: absolute;
+    z-index: 9;
+    background-color: #2196F3;
+    text-align: center;
+    border: 3px solid #0162c8;
+    width: 190px
+}
+
+#mydivheader {
+    padding: 10px;
+    cursor: move;
+    z-index: 10;
+    background-color: #2196F3;
+    color: #fff;
+    font-family: 'Londrina Solid';
+    font-weight: 200;
+}
+
+#div {
+    color: #0162c8;
+    float: left
+}
+
+.span {
+    color: white;
+    font-size: 22px
+}
