@@ -60,4 +60,4 @@ My first e-commerce website using PHP, JS, HTML &amp; CSS.
   - Select Share or embed map. 
   - Copy and paste the link in About.php in line no. 157 and set width = "500", height="400" and style='margin-top:2%' to make it presentable.
  
-- In _**Task1.php**_, in _**Our Location**_ section I added an api for location. In Task1.php in line no.21 add your coordinates according to your location. In line no. 26 add close coordinates of your exact coordinates so that on page reload it will show the side close to your location.
+- In _**Task1.php**_, in _**Our Location**_ section I added an api for location. In Task1.php in line no. 21 add your coordinates according to your location. In line no. 26 add close coordinates after some alteration according to your exact coordinates so that on page reload it will show the side close to your location.
