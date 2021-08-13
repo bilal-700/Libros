@@ -48,8 +48,8 @@ $page_name = "About";
         <?php
         if ($_SESSION["username"]) {
         ?>
-            Logged In. Click to <a href="logout.php" tite="Logout">Logout.
-            <?php
+        Logged In. Click to <a href="logout.php" tite="Logout">Logout.</a>
+        <?php
         } else {
             header("Location:Login.php");
         };
